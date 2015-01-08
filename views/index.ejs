@@ -1,0 +1,36 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include partials/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>This is great</h1>
+            <p>Your IP is <%= ip %></p>
+            <p>Your ISP is <%= org %></p>
+            <p>Your OS is <%= os %></p>
+            <p>Your User-agent is <%= browser %></p>
+		
+	<p><ul id="ports">
+		<li>Yehhaw</li>
+	   </ul>
+</p>
+        </div>
+    </main>
+
+    <footer>
+        <% include partials/footer %>
+    </footer>
+   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="javascripts/portout.js"></script>
+</body>
+</html>
+
